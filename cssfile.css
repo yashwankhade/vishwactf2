@@ -5,7 +5,7 @@
 
 
 html, body {
-  background-color: rgb(228, 216, 223);
+  background-color: rgb(12, 10, 11);
   font-family: 'Monoton' , cursive;
 }
 
@@ -17,7 +17,10 @@ p{
   width: 10px;
 }
 
-
+/* .navbar1{
+  width:100px;
+  height:200px;
+} */
 .question{
   border:10px 10px 10px 100px;
   border-color: red;
@@ -25,7 +28,20 @@ p{
   margin: 10px 10px 10px 100px;
    
 }
-
+.button{
+  background-color: red;
+  width: 100px;;
+  border-radius: 5px;
+  margin:10px;
+}
+.submit
+{
+  width:100px;
+  font-family: Arial;
+  border-radius: 5px;
+  margin: 0px 0px 0px 650px;
+  height:50px;
+}
 .container
 {
   border: 2px solid red;
@@ -48,11 +64,31 @@ box-sizing: border-box;
 h1 {
   font-weight: 400;
   margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 84px;
   font-size: 108px;
   text-align: center;
   color: red;
-  /* animation : blink, 3s; */
+  
 }
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(212, 226, 17), 0 0 20px rgb(18, 238, 227), 0 0 30px #e60073, 0 0 40px #2beb12, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px rgb(230, 18, 212), 0 0 30px #da0b0b, 0 0 40px #ff4da6, 0 0 50px #e63c3c, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
 
   
   *,
@@ -69,9 +105,10 @@ h1 {
   }
   main.vertical menu {
     float: left;
+    position: fixed;
     margin: 54px 18px 0px 0px;
     width:15%;
-    height:90%;
+    height:450;
     box-shadow: none;
     background-color: #000;
     background-image: linear-gradient(to top, rgba(4, 152, 228, 0.15) 0%, rgba(4, 152, 228, 0) 100%);
